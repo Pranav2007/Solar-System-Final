@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color: #000000">
+
+        <!--Camera-->
+        <a-entity position="0 10 40">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-sky src = "https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fvia_lactea.png"></a-sky>
+
+        <!--Sun-->
+        <a-entity>
+            <a-sphere position="0 0 0" radius="2" src = "https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fsol.jpg"></a-sphere>
+        </a-entity>
+
+        <!--Mercury-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 5000">
+            <a-sphere position="0  0 -5" radius="0.2" src = "https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fmercurio.jpg"></a-sphere>
+        </a-entity>
+
+        <!--Venus-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 10000">
+            <a-sphere position="0  0 -8" radius="0.4" src = "https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fsol.jpg"></a-sphere>  
+        </a-entity>
+
+        <!--Earth-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 15000">
+            <a-sphere position="0  0 -12" radius="0.5" src="https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fearth.jpg"></a-sphere>  
+        </a-entity>
+
+        <!--Mars-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 20000">
+            <a-sphere position="0  0 -15" radius="0.4" src="https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fvenus.jpg"></a-sphere>  
+        </a-entity>
+
+        <!--Jupiter-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 50000">
+            <a-sphere position="0  0 -20" radius="2" src="https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fjupiter.jpg"></a-sphere>  
+        </a-entity>
+
+        <!--Saturn-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 12000">
+            <a-sphere position="0  0 -25" radius="1.6" src="https://cdn.glitch.me/850dd813-e5e9-4dd0-9751-38981ae74172%2Fsaturn.png"></a-sphere>  
+            <a-torus position = "0 0 -25" rotation = "90 90 90" radius = "1.8" radius-tubular = "0.05" segments-tubular = "1000" color = "#A67B5B"></a-torus>>
+
+        <!--Uranus-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 75000">
+            <a-sphere position="0  0 -30" radius="1.2" src="https://planet-texture-maps.fandom.com/wiki/Special:FilePath/Uranus-2.jpg"></a-sphere>  
+        </a-entity>
+
+        <!--Neptune-->
+        <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 90000">
+            <a-sphere position="0  0 -35" radius="1.4" src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Solarsystemscope_texture_2k_neptune.jpg"></a-sphere>  
+        </a-entity>
+
+        <!--Orbits-->
+        <a-torus color = "grey" rotation = "90 0 0" radius = "5" radius-tubular = "0.01" segments-tubular = "1000"></a-torus>
+        <a-torus color = "grey" rotation = "90 0 0" radius = "8" radius-tubular = "0.01" segments-tubular = "1000"></a-torus>
+        <a-torus color = "grey" rotation = "90 0 0" radius = "12" radius-tubular = "0.01" segments-tubular = "1000"></a-torus>
+        <a-torus color = "grey" rotation = "90 0 0" radius = "15" radius-tubular = "0.01" segments-tubular = "1000"></a-torus>
+        <a-torus color = "grey" rotation = "90 0 0" radius = "20" radius-tubular = "0.01" segments-tubular = "1000"></a-torus>
+        <a-torus color = "grey" rotation = "90 0 0" radius = "25" radius-tubular = "0.01" segments-tubular = "1000"></a-torus>
+        <a-torus color = "grey" rotation = "90 0 0" radius = "30" radius-tubular = "0.01" segments-tubular = "1000"></a-torus>
+        <a-torus color = "grey" rotation = "90 0 0" radius = "35" radius-tubular = "0.01" segments-tubular = "1000"></a-torus>
+        
+    </a-scene>
+</body>
+
+</html>
